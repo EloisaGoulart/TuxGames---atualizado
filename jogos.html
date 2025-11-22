@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tux Games | Jogos</title>
+    <link rel="stylesheet" href="Jogos.css">
+</head>
+<body>
+<header class="topo">
+    <div class="logo_caixa">
+        <a href="TuxGames.html" class="logo-link">
+            <img src="logo (1).png" title="Tux Games" class="logo" alt="Tux Games">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="TuxGames.html">Home</a></li>
+                <li><a href="Jogos.html" class="ativo">Jogos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="games-main">
+    <section class="games-hero">
+        <h1>Catálogo de Jogos</h1>
+        <p>Explore os títulos mais relevantes por ano, gênero e plataforma. Clique para ver trailers no YouTube e sites oficiais de compra.</p>
+
+        <div class="games-filters">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Buscar por nome do jogo...">
+            </div>
+
+            <div class="filters-row">
+                <div class="select-wrapper">
+                    <label for="yearFilter">Ano de lançamento</label>
+                    <select id="yearFilter">
+                        <option value="all">Todos</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                    </select>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="genreFilter">Gênero</label>
+                    <select id="genreFilter">
+                        <option value="all">Todos</option>
+                        <option value="acao-aventura">Ação / Aventura</option>
+                        <option value="rpg">RPG</option>
+                        <option value="mundo-aberto">Mundo aberto</option>
+                        <option value="indie">Indie</option>
+                        <option value="multiplayer">Coop / Multiplayer</option>
+                        <option value="plataforma">Plataforma</option>
+                        <option value="corrida">Corrida</option>
+                        <option value="soulslike">Soulslike</option>
+                        <option value="terror">Terror</option>
+                        <option value="esporte">Esporte</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="category-buttons">
+                <button class="btn-filter active" data-category="all">Todos</button>
+                <button class="btn-filter" data-category="destaques">Destaques recentes</button>
+                <button class="btn-filter" data-category="triple-a">AAA</button>
+                <button class="btn-filter" data-category="rpg">RPG</button>
+                <button class="btn-filter" data-category="indie">Indies & Criativos</button>
+                <button class="btn-filter" data-category="multiplayer">Coop & Multiplayer</button>
+                <button class="btn-filter" data-category="classicos">Clássicos & Remasterizados</button>
+                <button class="btn-filter" data-category="soulslike">Soulslike</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="games-grid">
+        <!-- os cards serão gerados pelo JS usando esse UL -->
+        <ul class="produtos" id="gamesList"></ul>
+    </section>
+
+    <section class="games-note">
+        <p>*Catálogo demonstrativo para portfólio. Os links levam para buscas em lojas oficiais (Steam, PlayStation, Xbox) e trailers no YouTube.</p>
+    </section>
+</main>
+
+<footer class="basico">
+    <div class="footer-content">
+
+        <p class="copyright">&copy; Todos os direitos reservados para a Tux Games</p>
+    </div>
+</footer>
+
+<!-- script com o catálogo estático e filtros -->
+<script src="Jogos.js"></script>
+</body>
+</html>
