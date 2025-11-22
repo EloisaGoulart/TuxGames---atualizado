@@ -1,13 +1,4 @@
-// =====================================
-// CATÁLOGO ESTÁTICO (SEM API)
-// =====================================
-//
-// generoPrincipal: usado no filtro de gênero
-// categorias: usadas pelos botões de categoria
-// loja: "steam" | "ps" | "xbox" (para montar o link de compra)
-
 const jogos = [
-    // ========= JOGOS QUE VOCÊ PEDIU =========
     { titulo: "Red Dead Redemption 2", ano: 2018, generoPrincipal: "mundo-aberto", generos: ["acao-aventura","mundo-aberto"], categorias: ["triple-a","classicos"], plataforma: "PS4 / PS5 / Xbox / PC", loja: "steam", img: "red_dead_redemption_2.jpg" },
     { titulo: "Resident Evil 4", ano: 2023, generoPrincipal: "terror", generos: ["terror","acao-aventura"], categorias: ["triple-a","destaques"], plataforma: "PS4 / PS5 / Xbox / PC", loja: "steam", img: "resident_evil_4_remake.jpg" },
     { titulo: "ARC Raiders", ano: 2024, generoPrincipal: "multiplayer", generos: ["acao-aventura","multiplayer"], categorias: ["multiplayer","triple-a"], plataforma: "PS5 / Xbox / PC", loja: "steam", img: "arc_raiders.jpg" },
@@ -56,7 +47,6 @@ const jogos = [
     { titulo: "Monster Hunter: World", ano: 2018, generoPrincipal: "rpg", generos: ["rpg","acao-aventura"], categorias: ["rpg","multiplayer","triple-a"], plataforma: "PS4 / Xbox / PC", loja: "steam", img: "monster_hunter_world.jpg" },
     { titulo: "Control", ano: 2019, generoPrincipal: "acao-aventura", generos: ["acao-aventura"], categorias: ["triple-a"], plataforma: "PS4 / PS5 / Xbox / PC", loja: "steam", img: "control.jpg" },
 
-    // ========= COMPLEMENTO (AAA, INDIES, etc.) =========
     { titulo: "God of War (2018)", ano: 2018, generoPrincipal: "acao-aventura", generos: ["acao-aventura"], categorias: ["classicos","triple-a"], plataforma: "PS4 / PC", loja: "ps", img: "gow_2018.jpg" },
     { titulo: "God of War Ragnarök", ano: 2022, generoPrincipal: "acao-aventura", generos: ["acao-aventura"], categorias: ["destaques","triple-a"], plataforma: "PS4 / PS5", loja: "ps", img: "god_of_war_ragnarok.jpg" },
     { titulo: "Marvel's Spider-Man", ano: 2018, generoPrincipal: "acao-aventura", generos: ["acao-aventura"], categorias: ["triple-a"], plataforma: "PS4 / PS5", loja: "ps", img: "spider_man_ps4.jpg" },
@@ -115,13 +105,7 @@ const jogos = [
     { titulo: "Palworld", ano: 2024, generoPrincipal: "mundo-aberto", generos: ["mundo-aberto","multiplayer"], categorias: ["multiplayer","indie","destaques"], plataforma: "Xbox / PC", loja: "steam", img: "palworld.jpg" }
 ];
 
-// conferência: jogos.length deve ser > 100
 console.log("Total de jogos no catálogo:", jogos.length);
-
-// =====================================
-// FUNÇÕES AUXILIARES
-// =====================================
-
 function urlLoja(jogo) {
     const nome = encodeURIComponent(jogo.titulo);
     if (jogo.loja === "ps") {
@@ -137,10 +121,6 @@ function urlTrailer(jogo) {
     const query = encodeURIComponent(jogo.titulo + " official trailer");
     return "https://www.youtube.com/results?search_query=" + query;
 }
-
-// =====================================
-// GERAÇÃO DOS CARDS NO HTML
-// =====================================
 
 const gamesList = document.getElementById("gamesList");
 
@@ -188,9 +168,7 @@ function gerarCards() {
 
 gerarCards();
 
-// =====================================
 // BUSCA E FILTROS
-// =====================================
 
 const searchInput = document.getElementById("searchInput");
 const yearFilter = document.getElementById("yearFilter");
