@@ -68,8 +68,6 @@ const jogos = [
     { titulo: "Hades", ano: 2020, generoPrincipal: "indie", generos: ["indie","rpg"], categorias: ["indie","rpg"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "steam", img: "hades.jpg" },
     { titulo: "Hollow Knight", ano: 2017, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "hollow_knight.jpg" },
     { titulo: "Dead Cells", ano: 2018, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "dead_cells.jpg" },
-    { titulo: "Ori and the Blind Forest", ano: 2015, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie","classicos"], plataforma: "Xbox / Switch / PC", loja: "steam", img: "ori_blind_forest.jpg" },
-    { titulo: "Ori and the Will of the Wisps", ano: 2020, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie"], plataforma: "Xbox / Switch / PC", loja: "steam", img: "ori_will_of_wisps.jpg" },
     { titulo: "Stardew Valley", ano: 2016, generoPrincipal: "indie", generos: ["indie"], categorias: ["indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "stardew_valley.jpg" },
     { titulo: "Slay the Spire", ano: 2019, generoPrincipal: "indie", generos: ["indie"], categorias: ["indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "slay_the_spire.jpg" },
     { titulo: "The Binding of Isaac: Rebirth", ano: 2014, generoPrincipal: "indie", generos: ["indie"], categorias: ["indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "binding_of_isaac.jpg" },
@@ -77,10 +75,6 @@ const jogos = [
     { titulo: "Overcooked! 2", ano: 2018, generoPrincipal: "multiplayer", generos: ["multiplayer","indie"], categorias: ["multiplayer","indie"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "overcooked_2.jpg" },
     { titulo: "Rocket League", ano: 2015, generoPrincipal: "esporte", generos: ["esporte","multiplayer"], categorias: ["multiplayer"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "steam", img: "rocket_league.jpg" },
     { titulo: "Apex Legends", ano: 2019, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "steam", img: "apex_legends.jpg" },
-    { titulo: "Fortnite", ano: 2017, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "xbox", img: "fortnite.jpg" },
-    { titulo: "Valorant", ano: 2020, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer"], plataforma: "PC", loja: "steam", img: "valorant.jpg" },
-    { titulo: "League of Legends", ano: 2009, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer","classicos"], plataforma: "PC", loja: "steam", img: "league_of_legends.jpg" },
-    { titulo: "Counter-Strike 2", ano: 2023, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer","classicos"], plataforma: "PC", loja: "steam", img: "cs2.jpg" },
     { titulo: "Starfield", ano: 2023, generoPrincipal: "rpg", generos: ["rpg","mundo-aberto"], categorias: ["rpg","triple-a"], plataforma: "Xbox / PC", loja: "steam", img: "starfield.jpg" },
     { titulo: "Fallout 4", ano: 2015, generoPrincipal: "rpg", generos: ["rpg","mundo-aberto"], categorias: ["rpg","classicos"], plataforma: "PS4 / Xbox / PC", loja: "steam", img: "fallout_4.jpg" },
     { titulo: "Skyrim Special Edition", ano: 2016, generoPrincipal: "rpg", generos: ["rpg","mundo-aberto"], categorias: ["rpg","classicos"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "steam", img: "skyrim_se.jpg" },
@@ -99,7 +93,6 @@ const jogos = [
     { titulo: "Inside", ano: 2016, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie","classicos"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "inside.jpg" },
     { titulo: "Limbo", ano: 2010, generoPrincipal: "plataforma", generos: ["plataforma","indie"], categorias: ["indie","classicos"], plataforma: "PS4 / Xbox / Switch / PC", loja: "steam", img: "limbo.jpg" },
     { titulo: "Superliminal", ano: 2019, generoPrincipal: "indie", generos: ["indie"], categorias: ["indie"], plataforma: "PS4 / PS5 / Xbox / Switch / PC", loja: "steam", img: "superliminal.jpg" },
-    { titulo: "Sea of Thieves", ano: 2018, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer"], plataforma: "Xbox / PC / PS5", loja: "xbox", img: "sea_of_thieves.jpg" },
     { titulo: "Deep Rock Galactic", ano: 2020, generoPrincipal: "multiplayer", generos: ["multiplayer","indie"], categorias: ["multiplayer","indie"], plataforma: "PS4 / PS5 / Xbox / PC", loja: "steam", img: "deep_rock_galactic.jpg" },
     { titulo: "Rainbow Six Siege", ano: 2015, generoPrincipal: "multiplayer", generos: ["multiplayer"], categorias: ["multiplayer"], plataforma: "PS4 / PS5 / Xbox / PC", loja: "steam", img: "rainbow_six_siege.jpg" },
     { titulo: "Palworld", ano: 2024, generoPrincipal: "mundo-aberto", generos: ["mundo-aberto","multiplayer"], categorias: ["multiplayer","indie","destaques"], plataforma: "Xbox / PC", loja: "steam", img: "palworld.jpg" }
@@ -207,3 +200,4 @@ categoryButtons.forEach(btn => {
         aplicarFiltros();
     });
 });
+
